@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consumo de REST-API de Usuarios</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Consumo de REST-API de Usuarios</h1>
+
+  <div class="form-container">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="text" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Edad</label>
+      <input type="text" id="age">
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Comentarios</label>
+      <input type="text" id="comments">
+    </div>
+
+    <div class="button-group">
+      <button onclick="postUser()">POST Usuario</button>
+      <button onclick="getUsers()">GET Usuarios</button>
+    </div>
+  </div>
+
+  <div id="resultado"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="callrestapi.js"></script>
+
+</body>
+</html>
